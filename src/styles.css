@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background-color: #EFF3EA;
+}
+
+
+.logo{
+    font-size: 22px;
+    font-weight: bold;
+    color: #86A788;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #3A3D40;
+}
+nav ul li a::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #86A788;
+    transition: width 0.3s ease-in-out;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+footer{
+    background-color: #86A788;
+    padding-top: 49px;
+    padding-bottom: 19px;
+}
+footer .logo{
+    color: #EFF3EA;
+}
+footer ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #EFF3EA;
+}
+.green-btn{
+    background-color: #86A788;
+    color: #EFF3EA;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.green-btn:hover{
+    background-color: #3A3D40;
+    color: white;
+    text-decoration: none;
+}
+.title{
+    font-size: 45px;
+    font-weight: 600;
+    color: #3A3D40;
+    
+}
+.subtitle{
+    font-size: 23px;
+    color: #3A3D40;
+}
+.crd{
+    background-color: rgba(255, 255, 255, 0.24);
+    border: 3px solid rgba(134, 167, 136, 0.19);
+    border-radius: 10px;
+    height: 140px;
+}
+.crd .crd-title{
+    font-size: 25px;
+    
+}
+.crd .crd-subtitle{
+    font-size: 17px;
+    color: #3A3D40;
+}
+.big-crd{
+    margin-bottom: 149px;
+}
+.big-crd-title{
+    font-size: 30px;
+    font-weight: 600;
+    color: #3A3D40;
+    margin-bottom: 32.12px;
+}
+.big-crd-subtitle{
+    margin-top: 31.42px;
+    font-size: 20px;
+    color: #3A3D40;
+    margin-bottom: 21.03px;
+}
+.big-crd-subtitle span{
+    font-weight: 600;
+}

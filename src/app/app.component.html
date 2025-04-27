@@ -1,0 +1,34 @@
+<div style="position: relative;">
+    <nav class="d-flex justify-content-between align-items-center p-3 px-5">
+      <p class="logo">Transmitech</p>
+      <ul class="d-flex list-unstyled m-0" style="gap: 60px;">
+        <li><a routerLink="accueil" >Accueil</a></li>
+        <li><a routerLink="propos">À propos</a></li>
+        <li><a routerLink="equipe">Équipe et Partenaires</a></li>
+      </ul>
+      <button class="green-btn">Contacter</button>
+    </nav>
+    <router-outlet></router-outlet>
+    <footer>
+      <div class="d-flex justify-content-between align-items-center p-3 px-5">
+        <p class="logo">Transmitech</p>
+        <ul class="d-flex list-unstyled m-0" style="gap: 60px;">
+          <li><a href="">Accueil</a></li>
+          <li><a href="">À propos</a></li>
+          <li><a href="">Équipe et Partenaires</a></li>
+        </ul>
+        <img src="assets/Social.svg" alt="">
+      </div>
+      <div class="px-5" style="color: #EFF3EA;">
+        <hr class="mt-4 mb-3" style="border-top: 2px solid; opacity: 1;">
+        <p class="mb-0 text-center" style="margin-top: 19px;">© Copyright 2022, All Rights Reserved by Valorant</p>
+      </div>
+    </footer>
+    
+    <div class="random-icons-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; overflow: hidden;">
+      <ng-container *ngFor="let icon of randomIcons">
+        <img [src]="'assets/icons/parIcon.svg'" alt="random icon" width="36" height="36"
+             [ngStyle]="{'position': 'absolute', 'top.px': icon.top, 'left.px': icon.left}">
+      </ng-container>
+    </div>
+  </div>
